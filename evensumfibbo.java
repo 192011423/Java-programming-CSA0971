@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.io.*;
+class evensumfibbo {
+ public static void main(String[] args){
+ Scanner input= new Scanner(System.in);
+ System.out.print("Enter N: ");
+ int n=input.nextInt();
+ int fib[] = new int[2*n+1];
+ fib[0] = 0;
+ fib[1] = 1;
+ int sum = 0;
+ for (int i = 2; i <= 2 *n; i++) {
+ fib[i] = fib[0] + fib[1];
+ fib[0]=fib[1];
+ fib[1]=fib[i];
+ if (i % 2 == 0)
+ sum =sum + fib[i];
+ }
+ System.out.print("Even sum of fibonacci series is:" +sum);
+ } }
