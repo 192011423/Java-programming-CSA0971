@@ -1,16 +1,11 @@
 import java.util.*;
- class Reverse
- {
-  public static void main(String[] args) {
-        String rev="";
-    Scanner s1 = new Scanner(System.in); 
-    System.out.println("Enter a string");
-     String n = s1.nextLine();   
-    String reversedString = "";
-    for(int i = n.length(); i>0; --i){
-      rev=rev+(n.charAt(i-1));
-    }
-    
-    System.out.println(rev);
-  }
+class reverse
+{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+String s=sc.nextLine();
+StringBuilder sb=new StringBuilder(s);
+System.out.println("Reverse String:"+sb.reverse());
+}
 }
